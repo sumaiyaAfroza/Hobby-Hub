@@ -69,12 +69,12 @@ const Tooltip = ({ children, title }) => {
 
 const ThemeContext = () => {
     // Use in-memory storage instead of localStorage for Claude.ai compatibility
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState(localStorage.getItem('theme'));
     const [isAnimating, setIsAnimating] = useState(false);
 
     useEffect(() => {
         document.documentElement.setAttribute("data-theme", theme);
-        // Note: localStorage removed for Claude.ai compatibility
+       localStorage.setItem('theme', theme)
     }, [theme]);
 
     const toggleTheme = () => {
