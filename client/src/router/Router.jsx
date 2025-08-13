@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
             {
                 index:true,
                 Component: Home,
-                // loader:()=>fetch('http://localhost:3000/hobbies')
+                // loader:()=>fetch('https://hobby-hub-kohl.vercel.app/hobbies')
             },
             {
                 path:'/login',
@@ -33,20 +33,20 @@ export const router = createBrowserRouter([
             {
                 path: '/groups',
                 Component: AllGroup,
-               loader: () => fetch('http://localhost:3000/hobbies'),
+               loader: () => fetch('https://hobby-hub-kohl.vercel.app/hobbies'),
 
                 hydrateFallbackElement: <Loading></Loading>
             },
             {
                 path:'/hobbies/:id',
                 element:<PrivateRoute> <Details></Details> </PrivateRoute> ,
-                loader: ({params})=>fetch(`http://localhost:3000/hobbies/${params.id}`),
+                loader: ({params})=>fetch(`https://hobby-hub-kohl.vercel.app/hobbies/${params.id}`),
                 hydrateFallbackElement: <Loading></Loading>
             },
             {
                 path:'/myGroups/:id',
                 element: <PrivateRoute> <MyGroups></MyGroups></PrivateRoute>,
-                loader: ({params})=> fetch(`http://localhost:3000/myGroups/${params.id}`)
+                loader: ({params})=> fetch(`https://hobby-hub-kohl.vercel.app/myGroups/${params.id}`)
             },
             {
                 path:'/createGroup',
@@ -55,7 +55,7 @@ export const router = createBrowserRouter([
             {
                 path:'/updateGroup/:id',
                 element: <PrivateRoute> <Update></Update></PrivateRoute>,
-                loader: ({params})=>fetch(`http://localhost:3000/updateGrp/${params.id}`)
+                loader: ({params})=>fetch(`https://hobby-hub-kohl.vercel.app/updateGrp/${params.id}`)
             }
 
         ] 

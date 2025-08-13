@@ -35,7 +35,7 @@ const CreateGroup = () => {
     console.log(groupData)
 
 
-axios.post('http://localhost:3000/hobbies', groupData)
+axios.post('https://hobby-hub-kohl.vercel.app/hobbies', groupData)
   .then(res => {
     console.log(res.data);
     if (res.data.insertedId) {
@@ -64,10 +64,10 @@ axios.post('http://localhost:3000/hobbies', groupData)
   });
 
 
-    // axios.post('http://localhost:3000/hobbies',groupData)
+    // axios.post('https://hobby-hub-kohl.vercel.app/hobbies',groupData)
     // .then(res => console.log(res.data))
 
-    // fetch("http://localhost:3000/hobbies", {
+    // fetch("https://hobby-hub-kohl.vercel.app/hobbies", {
     //   method: "POST",
     //   headers: { "content-type": "application/json" },
     //   body: JSON.stringify(groupData),

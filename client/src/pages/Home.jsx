@@ -9,7 +9,7 @@ const Home = () => {
   const { data: hobbiesData } = useQuery({
     queryKey: ['repoData'],
     queryFn: () =>
-      fetch('http://localhost:3000/hobbies').then((res) =>
+      fetch('https://hobby-hub-kohl.vercel.app/hobbies').then((res) =>
         res.json(),
       ),
   })

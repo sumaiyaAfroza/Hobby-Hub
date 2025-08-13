@@ -26,7 +26,7 @@ const Update = () => {
     const updatedGroup = Object.fromEntries(formData.entries());
     updatedGroup.uid = user?.uid;
 
-    fetch(`http://localhost:3000/updateGrp/${_id}`, {
+    fetch(`https://hobby-hub-kohl.vercel.app/updateGrp/${_id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
