@@ -69,7 +69,7 @@ const Tooltip = ({ children, title }) => {
 
 const ThemeContext = () => {
     // Use in-memory storage instead of localStorage for Claude.ai compatibility
-    const [theme, setTheme] = useState(localStorage.getItem('theme'));
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
     const [isAnimating, setIsAnimating] = useState(false);
 
     useEffect(() => {
