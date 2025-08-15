@@ -2,8 +2,8 @@
 
 **Discover, Create, and Join Local Hobby Communities**
 
-[![Live Site](http://img.shields.io/badge/Live%20Site-Visit%20Now-brightgreen)](your-live-site-url-here)
-[![GitHub](http://img.shields.io/badge/GitHub-Repository-blue)](your-github-repo-url-here)
+[![Live Site](https://hobby-hub-6jxx.vercel.app/)](your-live-site-url-here)
+[![GitHub](https://github.com/sumaiyaAfroza/Hobby-Hub)](your-github-repo-url-here)
 
 HobbyHub is a comprehensive platform that connects people through shared interests and hobbies. Whether you're passionate about painting, hiking, reading, or cooking, HobbyHub helps you find like-minded individuals in your local area and build meaningful communities around your favorite activities.
 
